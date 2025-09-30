@@ -7,19 +7,22 @@ const mockPosts: Post[] = [
     id: 1,
     title: "My First Blog Post",
     content: "This is the content of my first blog post. It can be as long as you want.",
-    author: "Ayesh"
+    author: "Ayesh",
+    description : "dis one"
   },
   {
     id: 2,
     title: "Learning React with TypeScript",
     content: "React with TypeScript is powerful for building scalable front-end applications.",
-    author: "Ayesh"
+    author: "Ayesh",
+    description :"dis two"
   },
   {
     id: 3,
     title: "Why Front-End Development is Fun",
     content: "Front-end development allows creativity while solving real-world problems.",
-    author: "Ayesh"
+    author: "Ayesh",
+    description :"dis three"
   }
 ];
 
