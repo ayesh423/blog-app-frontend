@@ -22,7 +22,7 @@ const PostCard: React.FC<PostCardProps> = ({ post, isNew = false, onReadMore }) 
       )}
       
       <h2 className={styles.title}>{post.title}</h2>
-      
+      <label>Test label for git check</label>
       <p className={styles.content}>
         {post.content.length > 100
           ? post.content.substring(0, 100) + "..."
