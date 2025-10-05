@@ -1,10 +1,19 @@
-import Home from "./pages/Home";
+import React from 'react';
+import { BrowserRouter as Router} from 'react-router-dom';
+import BlogNavbar from './components/BlogNavbar';
+import './App.css';
+import Home from './pages/Home';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Home />
-    </div>
+    <Router>
+      <div className="App">
+        <BlogNavbar />
+        <main className="main-content">
+        <Home />
+        </main>
+      </div>
+    </Router>
   );
 };
 
