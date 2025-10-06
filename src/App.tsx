@@ -1,8 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import BlogNavbar from './components/BlogNavbar';
 import './App.css';
 import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Contact from './pages/Contact';
+import Blog from './pages/Blog';
 
 const App: React.FC = () => {
   return (
@@ -10,7 +13,12 @@ const App: React.FC = () => {
       <div className="App">
         <BlogNavbar />
         <main className="main-content">
-        <Home />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
         </main>
       </div>
     </Router>

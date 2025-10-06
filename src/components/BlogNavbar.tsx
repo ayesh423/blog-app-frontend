@@ -42,9 +42,9 @@ const BlogNavbar: React.FC = () => {
           </li>
           <li className="nav-item">
             <Link 
-              to="/profle" 
+              to="/profile" 
             
-              className={`nav-link ${isActive('/blog')}`}
+              className={`nav-link ${isActive('/profile')}`}
               onClick={closeMenu}
             >
               👨🏿‍🏫 profile
@@ -52,9 +52,9 @@ const BlogNavbar: React.FC = () => {
           </li>
           <li className="nav-item">
             <Link 
-              to="/blogs" 
+              to="/blog" 
             
-              className={`nav-link ${isActive('/categories')}`}
+              className={`nav-link ${isActive('/blog')}`}
               onClick={closeMenu}
             >
               📂 All post
