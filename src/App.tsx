@@ -1,11 +1,12 @@
-import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import BlogNavbar from './components/BlogNavbar';
-import './App.css';
-import Home from './pages/Home';
-import Profile from './pages/Profile';
-import Contact from './pages/Contact';
-import Blog from './pages/Blog';
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import BlogNavbar from "./components/BlogNavbar";
+import "./App.css";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import About from "./pages/About";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
             <Route path="/profile" element={<Profile />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
       </div>
