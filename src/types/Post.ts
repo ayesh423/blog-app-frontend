@@ -27,3 +27,25 @@ export interface Post {
   userProfile?: string;
   userName: string;
 }
+
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+  bio: string;
+  avatar: string;
+  joinDate: string;
+  website?: string;
+  socialMedia: {
+    twitter?: string;
+    linkedin?: string;
+    github?: string;
+  };
+}
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
