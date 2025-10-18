@@ -1,30 +1,38 @@
 .profile-container {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  padding: 3rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f1f5f9;
 }
 
 .profile-header {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #e1e5e9;
+  border-bottom: 2px solid #f1f5f9;
 }
 
 .profile-avatar {
-  margin-right: 2rem;
+  margin-right: 2.5rem;
+  position: relative;
 }
 
 .profile-avatar img {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #4f46e5;
+  border: 5px solid #6366f1;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-avatar img:hover {
+  transform: scale(1.05);
 }
 
 .profile-info {
@@ -32,35 +40,49 @@
 }
 
 .profile-name {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
+  font-size: 2.75rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.75rem;
 }
 
 .profile-email {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #6b7280;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .profile-join-date {
   font-size: 1rem;
   color: #9ca3af;
+  background: #f8fafc;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
 }
 
 .profile-bio {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  border-left: 4px solid #6366f1;
 }
 
 .profile-bio h2 {
   font-size: 1.5rem;
   color: #1f2937;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .profile-bio p {
-  line-height: 1.6;
+  line-height: 1.7;
   color: #4b5563;
   font-size: 1.1rem;
 }
@@ -68,50 +90,56 @@
 .profile-stats {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: #f8fafc;
-  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border-radius: 16px;
+  color: white;
 }
 
 .stat-item {
   text-align: center;
+  padding: 0 1rem;
 }
 
 .stat-value {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4f46e5;
+  font-size: 2.5rem;
+  font-weight: 800;
   margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stat-label {
-  font-size: 0.9rem;
-  color: #6b7280;
+  font-size: 0.95rem;
+  opacity: 0.9;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
 .profile-links {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .website-link {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #4f46e5;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 12px;
   text-align: center;
-  font-weight: 500;
-  transition: background-color 0.2s;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
 }
 
 .website-link:hover {
-  background: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
 }
 
 .social-links {
@@ -121,22 +149,30 @@
 }
 
 .social-links a {
-  padding: 0.5rem 1rem;
-  background: #f3f4f6;
+  padding: 0.75rem 1.5rem;
+  background: white;
   color: #374151;
   text-decoration: none;
-  border-radius: 6px;
-  transition: all 0.2s;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 2px solid #f1f5f9;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .social-links a:hover {
-  background: #e5e7eb;
-  color: #1f2937;
+  background: #6366f1;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
 }
 
 @media (max-width: 768px) {
   .profile-container {
-    padding: 1rem;
+    padding: 1.5rem;
+    margin: 1rem;
   }
   
   .profile-header {
@@ -146,16 +182,22 @@
   
   .profile-avatar {
     margin-right: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-avatar img {
+    width: 120px;
+    height: 120px;
   }
   
   .profile-name {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
   
   .profile-stats {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 1.5rem;
   }
   
   .social-links {
